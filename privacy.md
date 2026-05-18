@@ -5,7 +5,7 @@ title: KlickBox Privacy Policy
 
 # KlickBox — Privacy Policy
 
-**Last updated:** 2026-05-09
+**Last updated:** 2026-05-18
 **Operator:** Mohammad Soltaniehha ("we", "us")
 **Contact:** soltaniehha.m@gmail.com
 
@@ -19,7 +19,7 @@ KlickBox is a personal task manager. We designed it to keep your data yours. Thi
 | Email address (only if you choose to share it via Sign in with Apple) | So we can contact you about your account if needed. | Supabase (US region). |
 | Task content you create (titles, notes, tags, due dates, scores) | This *is* the product — we cannot show you your tasks without storing them. | Supabase (US region). |
 | Attachments you add to tasks (photos, audio recordings, PDFs, files) | So your attachments persist across devices. | Supabase Storage (US region). |
-| API Key (hashed) | To authorize your own OpenClaw deployment to read and write your tasks. | Supabase (US region). The plaintext key is shown to you once at creation and never stored in plaintext on our servers. |
+| API Key (hashed) | To authorize your own AI agent (OpenClaw, Claude Code, Claude Cowork, Codex, or any other agent you deploy) to read and write your tasks. | Supabase (US region). The plaintext key is shown to you once at creation and never stored in plaintext on our servers. |
 | Push notification token (only if you enable notifications) | To deliver task reminders and completion celebrations to your device. | Supabase (US region). |
 
 ## Data we do NOT collect
@@ -37,7 +37,7 @@ All KlickBox data is stored in **Supabase**, hosted in the **United States**. Su
 
 ## Who can access it
 
-- **You.** Only you, via the KlickBox app or via your own OpenClaw deployment authorized with your API Key.
+- **You.** Only you, via the KlickBox app or via your own AI agent authorized with your API Key.
 - **Us.** Operator personnel may access database backups for the purpose of resolving an incident you have reported. We do not browse user data.
 - **Apple.** Sign in with Apple flows your Apple ID identifier through Apple's servers; their privacy terms apply to that step.
 - **No one else.** We do not sell, rent, share, or syndicate your data to any third party.
