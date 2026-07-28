@@ -5,7 +5,7 @@ title: KlickBox Privacy Policy
 
 # KlickBox — Privacy Policy
 
-**Last updated:** 2026-05-18
+**Last updated:** 2026-07-28
 **Operator:** Mohammad Soltaniehha ("we", "us")
 **Contact:** soltaniehha.m@gmail.com
 
@@ -17,10 +17,11 @@ KlickBox is a personal task manager. We designed it to keep your data yours. Thi
 |---|---|---|
 | Apple ID identifier | To authenticate you with Sign in with Apple and isolate your tasks from other users. | Supabase (US region). |
 | Email address (only if you choose to share it via Sign in with Apple) | So we can contact you about your account if needed. | Supabase (US region). |
-| Task content you create (titles, notes, tags, due dates, scores) | This *is* the product — we cannot show you your tasks without storing them. | Supabase (US region). |
-| Attachments you add to tasks (photos, audio recordings, PDFs, files) | So your attachments persist across devices. | Supabase Storage (US region). |
-| API Key (hashed) | To authorize your own AI agent (OpenClaw, Claude Code, Claude Cowork, Codex, or any other agent you deploy) to read and write your tasks. | Supabase (US region). The plaintext key is shown to you once at creation and never stored in plaintext on our servers. |
-| Push notification token (only if you enable notifications) | To deliver task reminders and completion celebrations to your device. | Supabase (US region). |
+| Content you create — Tasks (titles, notes, tags, due dates, scores) and Ideas (notes, quotes, links, and the Projects you file them under) | This *is* the product — we cannot show you your tasks and ideas without storing them. | Supabase (US region). |
+| Attachments you add to a task, a comment, or an idea (photos, audio recordings you make in the app, PDFs, files) | So your attachments persist across devices. | Supabase Storage (US region). |
+| API Key (hashed) | To authorize your own AI agent (OpenClaw, Claude Code, Claude Cowork, Codex, or any other agent you deploy) to read and write your tasks. | Supabase (US region). The plaintext key is shown to you once at creation and never stored in plaintext on our servers. We also record when a key was last used and how many requests it has made, so you can spot a key being used without your knowledge and so we can rate-limit it. |
+
+**Reminders / notifications.** KlickBox uses **local notifications only** — the app schedules reminders on your device. We do not collect a push notification token and we do not run a remote push server. If we add server-side push in a future version, we will update this policy first.
 
 ## Data we do NOT collect
 
