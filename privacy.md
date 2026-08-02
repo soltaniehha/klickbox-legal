@@ -5,7 +5,7 @@ title: KlickBox Privacy Policy
 
 # KlickBox — Privacy Policy
 
-**Last updated:** 2026-07-28
+**Last updated:** 2026-08-02
 **Operator:** Mohammad Soltaniehha ("we", "us")
 **Contact:** soltaniehha.m@gmail.com
 
@@ -19,9 +19,20 @@ KlickBox is a personal task manager. We designed it to keep your data yours. Thi
 | Email address (only if you choose to share it via Sign in with Apple) | So we can contact you about your account if needed. | Supabase (US region). |
 | Content you create — Tasks (titles, notes, tags, due dates, scores) and Ideas (notes, quotes, links, and the Projects you file them under) | This *is* the product — we cannot show you your tasks and ideas without storing them. | Supabase (US region). |
 | Attachments you add to a task, a comment, or an idea (photos, audio recordings you make in the app, PDFs, files) | So your attachments persist across devices. | Supabase Storage (US region). |
+| Debrief audio and transcripts (in transit only) | Your own AI agent records spoken Debriefs for you; our Mailbox carries them to your phone. | Supabase Storage (US region), as transport only — deleted once your phone confirms pickup, and swept after 30 days even if never collected. The durable copy lives on **your own iCloud Drive**, not our servers (see below). |
+| Voice Replies (in transit only) | Voice notes you record in the app for your own AI agent to collect. | Supabase Storage (US region), as transport only — deleted once your agent confirms pickup, and swept after 30 days even if never collected. |
 | API Key (hashed) | To authorize your own AI agent (OpenClaw, Claude Code, Claude Cowork, Codex, or any other agent you deploy) to read and write your tasks. | Supabase (US region). The plaintext key is shown to you once at creation and never stored in plaintext on our servers. We also record when a key was last used and how many requests it has made, so you can spot a key being used without your knowledge and so we can rate-limit it. |
 
 **Reminders / notifications.** KlickBox uses **local notifications only** — the app schedules reminders on your device. We do not collect a push notification token and we do not run a remote push server. If we add server-side push in a future version, we will update this policy first.
+
+## Audio Debriefs and Voice Replies
+
+Your own AI agent can record spoken **Debriefs** for you, and you can answer with recorded **Voice Replies**. Both travel through a server-side **Mailbox** that is transport, never storage:
+
+- **The Mailbox keeps nothing.** Debrief audio and transcripts are deleted from our servers as soon as your phone confirms it has collected them; Voice Replies are deleted as soon as your agent confirms pickup. Anything never collected is swept after 30 days.
+- **The durable copy of your Debriefs is yours, not ours.** Once collected, Debrief audio and transcripts are archived to your own iCloud Drive (`KlickBox/Debriefs/`), on your iCloud quota, under Apple's iCloud terms. If iCloud Drive is off, they are kept in the app's private storage on your device instead. Neither copy is on our servers.
+- **We never listen to, read, or transcribe your Voice Replies.** A Voice Reply carries audio only. You record it; your own AI agent transcribes and processes it. If your agent uses a third-party speech-to-text service, that is a service you chose and configured — it sits outside KlickBox's data flow and outside this policy.
+- **Microphone.** KlickBox requests microphone access to record audio attachments for your tasks and Voice Replies you send to your own agent. Recording happens only when you start it; there is no background or passive listening.
 
 ## Data we do NOT collect
 
@@ -45,7 +56,7 @@ All KlickBox data is stored in **Supabase**, hosted in the **United States**. Su
 
 ## How long we keep it
 
-We keep your data until **you** delete it. There is no automatic purge of completed tasks, deferred tasks, or archived attachments. If you delete your account, all data tied to your user ID is removed within **30 days** from primary storage and within **90 days** from encrypted backups.
+We keep your data until **you** delete it. There is no automatic purge of completed tasks, deferred tasks, or archived attachments. The one exception is the **Mailbox**: Debriefs and Voice Replies in transit are deleted on pickup and swept at 30 days, as described above — that purge protects you, since nothing is meant to persist there. If you delete your account, all data tied to your user ID is removed within **30 days** from primary storage and within **90 days** from encrypted backups.
 
 ## Account deletion process
 
