@@ -54,6 +54,12 @@ All KlickBox data is stored in **Supabase**, hosted in the **United States**. Su
 - **Apple.** Sign in with Apple flows your Apple ID identifier through Apple's servers; their privacy terms apply to that step.
 - **No one else.** We do not sell, rent, share, or syndicate your data to any third party.
 
+### Bring your own agent
+
+KlickBox supports an optional integration with any AI agent you **deploy and run on infrastructure you control** — OpenClaw (our open-source reference agent), Claude Code, Claude Cowork, Codex, or any other model that can read documentation and call an HTTP API. If you generate an API Key in Settings and paste it into your agent, that agent can read and modify your KlickBox Tasks, Tags, Comments, Checklists, and Attachments on your behalf — exactly the same operations you can perform yourself. We do not host any agent, we do not see what prompts you send it, and we do not control where it runs.
+
+The API Key is the sole authorization for this access. You can **revoke it at any time** in Settings → API Key → Rotate (or by signing out), which immediately ends the agent's access. We never share your API Key plaintext with anyone — we don't have it; only its hash is stored.
+
 ## How long we keep it
 
 We keep your data until **you** delete it. There is no automatic purge of completed tasks, deferred tasks, or archived attachments. The one exception is the **Mailbox**: Debriefs and Voice Replies in transit are deleted on pickup and swept at 30 days, as described above — that purge protects you, since nothing is meant to persist there. If you delete your account, all data tied to your user ID is removed within **30 days** from primary storage and within **90 days** from encrypted backups.
